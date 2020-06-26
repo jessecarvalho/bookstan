@@ -1,0 +1,409 @@
+/*
+FONTS IMPORT
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+/*
+SHARED
+ */
+
+:root{
+    --mainColor: #2ab7ca;
+}
+
+*, a {
+    color: var(--mainColor);
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/*
+BODY
+*/
+body {
+    background-color: #111111;
+    padding: 1em;
+}
+
+body div{
+    transition:all 0.3s ease;
+}
+
+hr{
+    background-color: var(--mainColor);
+}
+
+/*
+NAVBAR*/
+.navbar{
+    background-color: #111111!important;
+}
+.navbar-nav {
+    float:none;
+    margin:0 37%;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+.nav-link{
+    color: var(--mainColor) !important;
+    border-radius: 5px;
+}
+
+.nav-link:hover, .active{
+    background-color: var(--mainColor);
+    color: black !important;
+}
+
+/*
+PAGES
+ */
+
+/*
+HOME
+*/
+
+.main{
+    margin-top: 10%;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.btn-discover{
+    background-color: var(--mainColor);
+}
+
+/*
+SOBRE
+ */
+
+.about{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    margin: 7% 20% 0 20%;
+}
+.about h1{
+    font-size: 2em;
+}
+
+.about h2{
+    font-size: 1em;
+}
+
+.about a{
+    text-decoration: underline;
+}
+
+.about a:hover{
+    color: white;
+}
+
+/*
+DESCOBRA
+ */
+
+#targetPage{
+    display: none;
+}
+
+#tagsPage{
+    display: none;
+}
+
+.container-discover{
+    text-align: center;
+    margin: 2% 20%;
+}
+
+.btn-continue{
+    margin-top: 3% !important;
+}
+
+.checkbox{
+    width: 30%;
+    margin: -1.5% .7% !important;
+}
+
+.form .checkbox-input:hover + label, .option-input:hover + label{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    background-color: var(--mainColor) !important;
+    color: black !important;
+}
+
+.form .label, .form .checkbox-input + label, .form .option-input + label, .form .text-input, .form .textarea, .form .select, .customSelect, .form .message, .form .button {
+    padding: 1.5em;
+    width: 100%;
+    background: none;
+}
+
+.form .checkbox-input, .form .option-input {
+    height: 1px;
+}
+.form .checkbox-input + label, .form .option-input + label {
+    color: var(--mainColor);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid var(--mainColor);
+}
+.form .checkbox-input:checked + label, .form .option-input:checked + label {
+    background-color: var(--mainColor);
+    color: black;
+}
+
+.form .checkboxes, .form .options {
+    list-style-type: none;
+}
+
+.form .checkbox, .form .option {
+    float: left;
+    margin: 1px;
+}
+
+/*
+CONTATO
+ */
+
+
+.container{
+    margin-top: 2%;
+    width: 50%;
+    padding: 5%;
+}
+
+.custom-form, textarea{
+    color: white;
+    background-color: #222222;
+    border: none;
+}
+
+.custom-form:hover, .custom-form:focus, textarea:hover, textarea:focus{
+    color: white;
+    background-color: #4E4E4E;
+}
+
+.btn-send{
+    margin-left: 45%;
+    background-color: var(--mainColor);
+}
+
+textarea{
+    width: 100%;
+}
+
+
+/*
+DISPLAY BOOKS
+ */
+
+.bookShelf{
+    padding: 2%;
+    border: 1px var(--mainColor) solid;
+    margin: 2% auto;
+    width: 90%;
+}
+
+.interested{
+    position: relative;
+    float: right;
+}
+
+.bookShelf img{
+    margin: auto 5% 0 auto;
+    float: left;
+    width: 20%;
+}
+
+.bookShelf h1{
+    margin-left: 5%;
+    font-size: 6em !important;
+    float: right;
+}
+
+.bookShelf h2{
+    text-align: center;
+}
+
+.bookShelf h3{
+    font-size: 1em;
+}
+
+
+.booksDisplay{
+    margin-top: 3%;
+}
+
+.booksDisplay h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+/*
+BLOG
+ */
+
+.blog-content{
+    margin: 3% 0;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3{
+    color: white !important;
+}
+.blog-content h1{
+    font-size: 2em;
+}
+.blog-content h2{
+    font-size: 1em;
+}
+.blog-content h3{
+    font-size: 1.2em;
+}
+.blog-content img{
+    width: 320px;
+    height: 160px;
+}
+.left-blog{
+    width: 95%;
+}
+
+/*
+MANAGER BLOG
+ */
+.container-manager{
+    margin: -3% auto !important;
+}
+
+.options-manager{
+    margin: 10% auto 0;
+    width: 30%;
+}
+
+.button-post{
+    margin-top: 7%;
+    width: 100% !important;
+    background-color: var(--mainColor);
+    border: none;
+    color: #111111;
+    font-size: 2em;
+}
+
+.btn-Post{
+    border: var(--mainColor) 1px solid;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+}
+
+.btn-back{
+    border: var(--mainColor) 1px solid;
+    color: white;
+    background-color: transparent;
+    width: 50%;
+}
+
+.btn-back:hover, .btn-Post:hover{
+    background-color: var(--mainColor);
+}
+
+.btn-manager {
+    color: var(--mainColor);
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+}
+.btn-manager:after, .btn-manager:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+.btn-manager:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid var(--mainColor);
+    border-left: 5px solid var(--mainColor);
+}
+.btn-manager:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid var(--mainColor);
+    border-right: 5px solid var(--mainColor);
+}
+.btn-manager:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.btn-manager:hover:before, .btn-manager:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+TIPOGRAFIAS
+ */
+
+
+
+
+/*
+ICONS
+ */
+
+.icofont{
+    font-size: 10em;
+}
+
+/*
+RESPONSIVE
+*/
+
+@media (max-width: 768px) {
+    .navbar-nav > li {
+        display: block !important;
+    }
+    .container-discover{
+        font-size: 0.8em;
+        margin: 2% 0;
+    }
+    .about{
+        margin: 7% 5% 0 5%;
+    }
+    .container{
+        margin-top: 2%;
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+
