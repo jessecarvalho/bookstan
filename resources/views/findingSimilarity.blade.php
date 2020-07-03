@@ -1,9 +1,6 @@
 @extends('master/layout')
 @section('content')
 
-
-
-
 <?php
     echo "<h1 style='text-align: center'>Com base nos teus requisitos te recomendamos os seguintes livros:</h1>";
     foreach ($data as $book){
@@ -27,9 +24,6 @@
            echo '</div>';
            echo' <div class="col-2"></div>';
         echo '</div>';
-
     }
-
 ?>
-
 @endsection

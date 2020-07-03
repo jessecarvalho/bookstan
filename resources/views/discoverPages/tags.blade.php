@@ -1,5 +1,6 @@
 <div class="container-discover" id="tagsPage">
-    <h1>Escolha as tags</h1>
+    <h1>ESCOLHA AS TAGS</h1>
+    <h5>Para um resultado mais preciso escolha no mínimo uma tag e no máximo duas tags</h5>
     <form action='{{route("tagsController")}}' class='form' name="tagsForm">
         <div class='field'>
             <ul class='checkboxes'>

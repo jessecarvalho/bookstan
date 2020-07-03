@@ -1,5 +1,6 @@
 <div class="container-discover" id="targetPage">
-    <h1>Escolha o público alvo</h1>
+    <h1>ESCOLHA O PÚBLICO ALVO</h1>
+    <h5>Para um resultado mais preciso escolha apenas um público alvo</h5>
     <form action='{{route("targetController")}}' class='form' name="targetForm">
         <div class='field'>
             <ul class='checkboxes'>

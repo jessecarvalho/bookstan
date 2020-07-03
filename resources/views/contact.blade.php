@@ -3,6 +3,8 @@
 @section('content')
 
 <div class="container">
+    <h1 style="text-align: center">Entre em contato conosco</h1>
+    <hr style="width: 100%">
     <form method="get" action="{{route("sendMail")}}">
         <div class="form-row">
             <div class="form-group col-md-12">
@@ -32,7 +34,7 @@
                 <textarea rows="5" id="inputMensagem" name="mensagem"></textarea>
             </div>
         </div>
-        <button type="submit" class="btn btn-send">Enviar</button>
+        <button type="submit" class="btn btn-Post" style="float: right">Enviar</button>
     </form>
 </div>
 

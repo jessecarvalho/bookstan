@@ -1,5 +1,6 @@
 <div class="container-discover" id="genrePage">
-    <h1>ESCOLHA UM GÊNERO</h1>
+    <h1>ESCOLHA OS GÊNERO</h1>
+    <h5>Para um resultado mais preciso escolha no mínimo um e no máximo dois gêneros</h5>
     <form action='{{route("genreController")}}' class='form' name="genreForm">
         <div class='field'>
             <ul class='checkboxes'>

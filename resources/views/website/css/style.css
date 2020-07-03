@@ -10,7 +10,7 @@ SHARED
  */
 
 :root{
-    --mainColor: #2ab7ca;
+    --mainColor: #FFD9C2;
 }
 
 *, a {
@@ -40,12 +40,7 @@ NAVBAR*/
 .navbar{
     background-color: #111111!important;
 }
-.navbar-nav {
-    float:none;
-    margin:0 37%;
-    display: block;
-    text-align: center;
-}
+
 
 .navbar-nav > li {
     display: inline-block;
@@ -78,6 +73,7 @@ HOME
 
 .btn-discover{
     background-color: var(--mainColor);
+    border: none;
 }
 
 /*
@@ -106,7 +102,7 @@ SOBRE
 }
 
 /*
-DESCOBRA
+DESCUBRA
  */
 
 #targetPage{
@@ -177,9 +173,8 @@ CONTATO
 
 
 .container{
-    margin-top: 2%;
     width: 50%;
-    padding: 5%;
+    padding: 3%;
 }
 
 .custom-form, textarea{
@@ -260,6 +255,15 @@ BLOG
 .blog-content h1, .blog-content h2, .blog-content h3{
     color: white !important;
 }
+
+.blog-content h1:hover{
+    color: var(--mainColor) !important;
+}
+
+.blog-content a{
+    text-decoration: none !important;
+}
+
 .blog-content h1{
     font-size: 2em;
 }
@@ -277,9 +281,89 @@ BLOG
     width: 95%;
 }
 
+.disqus{
+    width: 70%;
+    margin: 3% auto;
+}
+
+
+
+/*
+SINGLE POST BLOG
+ */
+
+.singleBlogContainer img{
+    width: 100%;
+}
+
+.singleBlogContainer{
+    text-align: center;
+}
+
+.singleBlogContainer h1, .singleBlogContainer h2, .singleBlogContainer h3, .singleBlogContainer h4{
+    color: white;
+}
+
+.singleBlogContainer h2{
+    font-size: 1.2em;
+}
+.singleBlogContainer h3{
+    font-size: 1.3em;
+}
+
+/*
+BLOG EDIT
+ */
+
+.container-editBlog{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container-editBlog h1, .container-editBlog h2, .container-editBlog h3{
+    color: white;
+}
+
+.container-editBlog h1{
+    font-size: 1em;
+}
+.container-editBlog h2{
+    font-size: 1em;
+}
+.container-editBlog h3{
+    font-size: 1em;
+}
+.container-editBlog button{
+    float: right;
+    margin-top: -9%;
+}
+
+.edit-form{
+    width: 50%;
+    margin: 15% auto;
+}
+
+.btn-warning{
+    background-color: red;
+    color: white;
+}
+
+
 /*
 MANAGER BLOG
  */
+
+#logoutButton{
+    background-color: transparent;
+    border: none;
+    border: none;
+}
+
+#logoutButton:hover{
+    background-color: white;
+    color: black;
+}
+
 .container-manager{
     margin: -3% auto !important;
 }
@@ -356,18 +440,54 @@ MANAGER BLOG
     height: 100%;
 }
 
+.loginForm{
+    margin: 10% auto 0 auto;
+    width: 30%;
+}
 
 
+/*
+ERROR
+ */
+
+.error{
+    font-family: 'Dosis', sans-serif;
+    margin: 6% 20% 0 20%;
+}
+
+.error h2{
+    font-size: 1.5em;
+}
+
+.error h3{
+    font-size: 1em;
+}
 
 
+/*
+PAGINATION
+ */
 
 
+.page-link{
+    border: none;
+    color: white;
+    background-color: black !important;
+}
 
+.page-link:hover{
+    color: var(--mainColor);
+}
 
+.page-item.active .page-link{
+    color: var(--mainColor);
+    background-color: #007bff;
+    border-color: #007bff;
+}
 
-
-
-
+/*
+MODAL
+ */
 
 /*
 TIPOGRAFIAS
@@ -389,6 +509,44 @@ RESPONSIVE
 */
 
 @media (max-width: 768px) {
+
+    .navbar{
+        text-align: center !important;
+    }
+    .options-manager{
+        margin: 10% auto 0;
+        width: 80%;
+    }
+
+    .loginForm{
+        width: 100%;
+    }
+
+    .btn-readMore{
+        margin: 0 auto !important;
+        display: block;
+    }
+
+    .disqus{
+        width: 100%;
+    }
+
+    .singleBlogContainer{
+        text-align: center;
+    }
+
+    .singleBlogContainer h1, .singleBlogContainer h2, .singleBlogContainer h3, .singleBlogContainer h4{
+        color: white;
+    }
+
+    .singleBlogContainer h2{
+        font-size: 1.2em;
+    }
+    .singleBlogContainer h3{
+        font-size: 1.3em;
+    }
+
+
     .navbar-nav > li {
         display: block !important;
     }
@@ -404,6 +562,24 @@ RESPONSIVE
         width: 100%;
         padding: 5%;
     }
+    .blog-content h1, .blog-content h2, .blog-content h3{
+        text-align: center;
+    }
+    .blog-content img{
+        margin-left: 25%;
+    }
 }
 
+@media (max-width: 640px){
+    .blog-content img{
+        margin-left: 20%;
+    }
+}
+
+
+@media (max-width: 520px){
+    .blog-content img{
+        margin-left: 15%;
+    }
+}
 

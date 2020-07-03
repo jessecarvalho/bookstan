@@ -17,7 +17,7 @@ class Post extends Model
 
     public function setResumoAttribute($value)
     {
-        $value = substr($value, 0, 172);
+        $value = substr($value, 0, 170);
         $this->attributes['resumo'] = $value;
     }
 

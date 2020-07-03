@@ -8,11 +8,18 @@ $(function () {
             data: $(this).serialize(),
             dataType: "json",
             success: function (response) {
+                if(response.success === true){
+                    document.getElementById("genrePage").style.display = "none";
+                    document.getElementById("targetPage").style.display = "block";
+
+                } else{
+                    $('#exampleModal').modal('show');
+                    document.getElementById("error").innerHTML = response.message;
+                }
                 console.log(response);
             }
         });
-        document.getElementById("genrePage").style.display = "none";
-        document.getElementById("targetPage").style.display = "block";
+
     });
 });
 
@@ -25,11 +32,16 @@ $(function () {
             data: $(this).serialize(),
             dataType: "json",
             success: function (response) {
+                if(response.success === true){
+                    document.getElementById("targetPage").style.display = "none";
+                    document.getElementById("tagsPage").style.display = "block";
+                } else{
+                    $('#exampleModal').modal('show');
+                    document.getElementById("error").innerHTML = response.message;
+                }
                 console.log(response);
             }
         });
-        document.getElementById("targetPage").style.display = "none";
-        document.getElementById("tagsPage").style.display = "block";
     });
 });
 
@@ -42,9 +54,64 @@ $(function () {
             data: $(this).serialize(),
             dataType: "json",
             success: function (response) {
-                window.location.href = "{{route("similiarity")}}"
+                if(response.success === true){
+                    document.getElementById("tagsPage").style.display = "none";
+                    document.getElementById("otherTagsPage").style.display = "block";
+                } else{
+                    $('#exampleModal').modal('show');
+                    document.getElementById("error").innerHTML = response.message;
+                }
+                console.log(response);
             }
         });
     });
 });
+
+
+$(function () {
+    $('form[name="otherTagsForm"]').submit(function (event) {
+        event.preventDefault();
+        $.ajax({
+            url: '{{route("otherTagsController")}}',
+            type: "get",
+            data: $(this).serialize(),
+            dataType: "json",
+            success: function (response) {
+                if(response.success === true){
+                    window.location.href = "{{route("similiarity")}}"
+                } else{
+                    $('#exampleModal').modal('show');
+                    document.getElementById("error").innerHTML = response.message;
+                }
+                console.log(response);
+            }
+        });
+    });
+});
+
+$(function () {
+    $('form[name="otherTagsForm"]').submit(function (event) {
+        event.preventDefault();
+        $.ajax({
+            url: '{{route("otherTagsController")}}',
+            type: "get",
+            data: $(this).serialize(),
+            dataType: "json",
+            success: function (response) {
+                if(response.success === true){
+                    window.location.href = "{{route("similiarity")}}"
+                } else{
+                    $('#exampleModal').modal('show');
+                    document.getElementById("error").innerHTML = response.message;
+                }
+                console.log(response);
+            }
+        });
+    });
+});
+
+
+
 </script>
+
+
