@@ -82,6 +82,7 @@ class PostController extends Controller
             $post->comentarios = 0;
             $post->resumo = $request->text;
             $post->save();
+            return view('blogManagerPages.resultEdit', ["data" => ["icofont-smirk", "Postagem realizada com sucesso!"]]);
         } catch (\Exception $exception){
             $data = array("icofont-crying", $exception->getMessage(), $exception->getCode(), $exception->getLine(), $exception->getFile());
             return view("errorPage", ["data" => $data]);

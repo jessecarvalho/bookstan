@@ -65,9 +65,9 @@ class PageController extends Controller
 
     public function otherTags(Request $request)
     {
-        if (sizeof($request->otherTags) > 3){
+        if (sizeof($request->otherTags) > 5){
             $otherTags['success'] = false;
-            $otherTags['message'] = 'Por favor, escolha no máximo 3 tags';
+            $otherTags['message'] = 'Por favor, escolha no máximo 5 tags opcionais';
             echo json_encode($otherTags);
         }
         else{

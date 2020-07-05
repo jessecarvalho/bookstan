@@ -30,17 +30,16 @@ Route::get('/manager/edit/{id}', "PostController@edit")->name("manager.edit");
 Route::get('/manager/edit/do/{id}/{col}', "PostController@doEdit")->name("manager.doEdit");
 Route::get('/manager/delete/{id}', "PostController@delete")->name("manager.delete");
 
-
-
-Route::post('/sendPost', 'PostController@sendPost')->name("sendPost");
+Route::post('/sendpost', 'PostController@sendPost')->name("sendPost");
 
 Route::get('/sendmail', 'ContactController@send')->name('sendMail');
 
 Route::get('/genre', 'PageController@genre')->name('genreController');
 Route::get('/target', 'PageController@target')->name('targetController');
 Route::get('/tags', 'PageController@tags')->name('tagsController');
-Route::get('/otherTags', 'PageController@otherTags')->name('otherTagsController');
+Route::get('/othertags', 'PageController@otherTags')->name('otherTagsController');
 Route::get('/findingsimiliarity', 'SimiliarityEngine@main')->name('similiarity');
+Route::get('/bookinfo/{slug}', 'InfoBook@showInfo')->name('bookInfo');
 
 Route::get('image/{filename}', 'ImageController@displayImage')->name('image.displayImage');
 

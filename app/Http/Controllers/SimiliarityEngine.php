@@ -83,7 +83,7 @@ class SimiliarityEngine extends Controller
                 $sizeOfDif = sizeof(array_diff($userRequest, $decode));
                 //Quantos generos o usuário pediu que o livro tem
                 if ($sizeOfUser != $sizeOfDif){
-                    $points = (($sizeOfUser - $sizeOfDif) * 30) - ($sizeOfDif * 10);
+                    $points = (($sizeOfUser - $sizeOfDif) * 30) - ($sizeOfDif * 5);
                 } else{
                     $points = -25;
                 }

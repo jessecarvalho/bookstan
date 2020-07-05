@@ -23,7 +23,7 @@
             </div>
             <div class="col-4">
                 <label for="exampleFormControlFile1">Imagem</label>
-                <input type="file" name="image">
+                <input type="file" name="image" required>
             </div>
             <div class="col-8">
                 <label for="validationCustom01">Tags</label>
@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Postagem</label>
-                <textarea name="text" class="custom-form form-control" id="exampleFormControlTextarea1" rows="10" cols="100"></textarea>
+                <textarea name="text" class="custom-form form-control" id="exampleFormControlTextarea1" rows="10" cols="100" required></textarea>
             </div>
         </div>
         <button type="submit" class="btn btn-Post" style="float: right">Publicar</button>

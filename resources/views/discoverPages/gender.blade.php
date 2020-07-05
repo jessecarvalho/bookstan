@@ -38,7 +38,7 @@
                     <label class='checkbox-label' for='choice7'>Humor</label>
                 </li>
                 <li class='checkbox'>
-                    <input class='checkbox-input' id='choice8' name='genre[]' type='checkbox' value='Mangás/HQs'>
+                    <input class='checkbox-input' id='choice8' name='genre[]' type='checkbox' value='Mangás e HQs'>
                     <label class='checkbox-label' for='choice8'>Mangás/HQs</label>
                 </li>
                 <li class='checkbox'>

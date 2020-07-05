@@ -10,7 +10,7 @@ SHARED
  */
 
 :root{
-    --mainColor: #FFD9C2;
+    --mainColor: #EDD9A3;
 }
 
 *, a {
@@ -199,12 +199,16 @@ textarea{
 
 
 /*
-DISPLAY BOOKS
+FINDING SIMILIARITY
  */
+
+.main-text{
+    text-align: center;
+}
 
 .bookShelf{
     padding: 2%;
-    border: 1px var(--mainColor) solid;
+    border: none;
     margin: 2% auto;
     width: 90%;
 }
@@ -343,7 +347,13 @@ BLOG EDIT
     margin: 15% auto;
 }
 
+.btn-backedt{
+    color: white;
+    background-color: transparent;
+}
+
 .btn-warning{
+    margin-right: 10%;
     background-color: red;
     color: white;
 }
@@ -445,6 +455,37 @@ MANAGER BLOG
     width: 30%;
 }
 
+/*
+Book Info
+ */
+
+.container-InfoBook{
+    margin: 2% auto;
+    width: 60%;
+}
+
+.container-InfoBook img{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+
+.container-InfoBook h1{
+    font-size: 3em;
+}
+
+.container-InfoBook h3{
+    font-size: 1.3em;
+}
+
+.container-InfoBook h4{
+    font-size: 1.2em;
+}
+
+.container-InfoBook button{
+    margin: 0 1%;
+}
+
 
 /*
 ERROR
@@ -508,8 +549,21 @@ ICONS
 RESPONSIVE
 */
 
-@media (max-width: 768px) {
 
+@media (max-width: 1280px){
+    .container-editBlog{
+        width: 65%;
+        margin: 5% auto;
+    }
+}
+
+@media (max-width: 1080px){
+    .btn-warning{
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar{
         text-align: center !important;
     }
@@ -546,7 +600,6 @@ RESPONSIVE
         font-size: 1.3em;
     }
 
-
     .navbar-nav > li {
         display: block !important;
     }
@@ -568,9 +621,80 @@ RESPONSIVE
     .blog-content img{
         margin-left: 25%;
     }
+
+    .container-editBlog{
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-edit{
+        float: none !important;
+        margin: 0 !important;
+    }
+
+    .edit-form{
+        width: 100%;
+        margin: 15% auto;
+    }
+
 }
 
 @media (max-width: 640px){
+
+    /*
+Book Info
+ */
+
+    .container-InfoBook{
+        margin: 2% auto;
+        width: 95%;
+    }
+
+    .container-InfoBook img{
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+    }
+
+    .container-InfoBook h1{
+        font-size: 3em;
+    }
+
+    .container-InfoBook h3{
+        font-size: 1.3em;
+    }
+
+    .container-InfoBook h4{
+        font-size: 1.2em;
+    }
+
+    .container-InfoBook button{
+        margin: 0 1%;
+    }
+
+
+
+
+    .main-text{
+        font-size: 2em;
+    }
+
+    .bookShelf{
+        border: none !important;
+        width: 100%;
+    }
+
+    .bookShelf h1{
+        margin-left: 5%;
+        font-size: 3em !important;
+        float: right;
+    }
+
+    .bookShelf h2{
+        font-size: 1.5em;
+        text-align: left;
+    }
+
     .blog-content img{
         margin-left: 20%;
     }

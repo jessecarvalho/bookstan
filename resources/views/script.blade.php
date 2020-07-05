@@ -89,26 +89,6 @@ $(function () {
     });
 });
 
-$(function () {
-    $('form[name="otherTagsForm"]').submit(function (event) {
-        event.preventDefault();
-        $.ajax({
-            url: '{{route("otherTagsController")}}',
-            type: "get",
-            data: $(this).serialize(),
-            dataType: "json",
-            success: function (response) {
-                if(response.success === true){
-                    window.location.href = "{{route("similiarity")}}"
-                } else{
-                    $('#exampleModal').modal('show');
-                    document.getElementById("error").innerHTML = response.message;
-                }
-                console.log(response);
-            }
-        });
-    });
-});
 
 
 
