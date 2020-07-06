@@ -1,5 +1,4 @@
-# BOOKSTAN
-### O PROJETO
+### BOOKSTAN
  Bookstan é um projeto desenvolvido com o objetivo de oferecer um script que recomenda ao usuário um
  novo livro para começar a leitura a partir de requisitos pré-estabelecidos.
  
@@ -32,5 +31,12 @@ e muito mais.
 ![Screenshot](screenshots/06.jpg)
 
 
+### Devidos créditos
 
+Desenvolvedor: Jessé Carvalho (jesseelias80@gmail.com). <br>
+[Icons cedidos gratuitamente por: IcoFont](https://icofont.com/). <br>
+
+### Licença
+
+MIT
 
